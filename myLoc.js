@@ -1,6 +1,6 @@
 var ourCoords = {
-  latitude: 47.624851,
-  longitude: -122.52099
+  latitude: 40.625766,
+  longitude: -111.82407
 };
 
 var watchId = null;
@@ -49,7 +49,7 @@ function displayLocation(position) {
   
   var km = computeDistance(position.coords, ourCoords);
   var distance = document.getElementById("distance");
-  distance.innerHTML = "You are " + km + " kilometers from the WickedlySmart HQ";
+  distance.innerHTML = "You are " + km + " kilometers from home";
 
   if (map == null) {
     showMap(position.coords);
